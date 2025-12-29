@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import StructuredData from "@/components/StructuredData";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
