@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description: "Spesialis jasa lubang kancing dan pasang kancing profesional di Singaraja. Hasil presisi standar garmen, harga bersahabat, kualitas hebat.",
   
   verification: {
-    google: "yIB0-2wEbuolYW67FZtWgr7L5xVUd-YzbOvzwLI5WVs", // Nanti diisi setelah daftar GSC
+    google: "yIB0-2wEbuolYW67FZtWgr7L5xVUd-YzbOvzwLI5WVs",
   },
 
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "Raditya Collection - Spesialis Lubang Kancing",
+    title: "Raditya Collection - Spesialis Lubang Kancing dan Pasang Kancing",
     description: "Jasa lubang & pasang kancing presisi di Singaraja. Hubungi kami!",
     url: 'https://www.radityacollection.web.id',
     siteName: 'Raditya Collection',
