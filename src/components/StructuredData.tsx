@@ -1,10 +1,10 @@
 const StructuredData = () => {
-  const jsonLd = {
+  const jsonLd = [{
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Raditya Collection",
     "image": "https://www.radityacollection.web.id/images/hero.jpg",
-    "telephone": "+6285946182092", // Ganti dengan nomor WA Anda
+    "telephone": "+6285946182092",
     "url": "https://www.radityacollection.web.id",
     "address": {
       "@type": "PostalAddress",
@@ -15,7 +15,15 @@ const StructuredData = () => {
     },
     "priceRange": "$",
     "description": "Jasa lubang kancing dan pasang kancing profesional."
-  };
+  },
+  {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Raditya Collection",
+      "alternateName": "Raditya Collection Singaraja",
+      "url": "https://www.radityacollection.web.id"
+    }
+  ];
 
   return (
     <script
