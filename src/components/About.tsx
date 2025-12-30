@@ -19,7 +19,7 @@ const About = () => {
 
             <div className="absolute -bottom-6 right-2 md:-bottom-8 md:-right-8 bg-white p-4 md:p-5 rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.2)] border-t-4 border-sunshine z-20 flex items-center gap-3 md:gap-4">
               <div className="text-3xl md:text-4xl font-extrabold text-sunshine leading-none">
-                3+
+                {new Date().getFullYear() - 2022}+
               </div>
               <div className="text-xs md:text-sm text-gray-800 font-bold leading-tight uppercase tracking-wider">
                 Tahun

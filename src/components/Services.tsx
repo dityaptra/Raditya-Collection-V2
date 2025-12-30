@@ -43,7 +43,7 @@ const Services = () => {
     {
       id: "06",
       title: "Layanan Lainnya",
-      desc: "Kami juga melayani kebutuhan jahit lainnya.",
+      desc: "Untuk layanan lainnya harap berkonsultasi langsung.",
       icon: (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
       ),
