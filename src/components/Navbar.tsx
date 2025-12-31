@@ -77,6 +77,7 @@ const Navbar = () => {
           <div className="flex items-center md:hidden mr-4">
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label="Buka Menu Navigasi"
               className="text-gray-600 hover:text-sunshine focus:outline-none p-2"
             >
               <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
