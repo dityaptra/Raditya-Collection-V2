@@ -31,7 +31,8 @@ const Hero = () => {
           alt="Latar Belakang Workshop Jahit"
           fill
           className="object-cover"
-          priority
+          priority={true}
+          quality={80}
         />
         <div className="absolute inset-0 bg-black/60"></div>
       </div>
