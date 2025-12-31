@@ -1,3 +1,5 @@
+import { RevealOnScroll } from "@/components/RevealOnScroll";
+
 const Services = () => {
   const services = [
     {
@@ -53,50 +55,59 @@ const Services = () => {
   return (
     <section id="services" className="py-24 bg-sunshine-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
-            Layanan <span className="text-sunshine">Unggulan</span>
-          </h2>
-          <div className="w-24 h-1.5 bg-sunshine mx-auto mt-6 rounded-full"></div>
-          <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-            Kami akan melayani anda dengan beberapa layanan yang unggul dan berkualitas.
-          </p>
-        </div>
+        
+        {/* Header Section (Animasi Muncul Bersamaan) */}
+        <RevealOnScroll width="100%">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+              Layanan <span className="text-sunshine">Unggulan</span>
+            </h2>
+            <div className="w-24 h-1.5 bg-sunshine mx-auto mt-6 rounded-full"></div>
+            <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+              Kami akan melayani anda dengan beberapa layanan yang unggul dan berkualitas.
+            </p>
+          </div>
+        </RevealOnScroll>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden p-6 md:p-8 -m-6 md:-m-8">
+        {/* ^^^ Tambahkan overflow-hidden di div parent agar animasi tidak bikin scroll samping */}
+          
           {services.map((item, index) => (
-            <div
-              key={index}
-              className="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl border border-gray-100 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+            <RevealOnScroll 
+              key={index} 
+              width="100%" 
+              delay={index * 0.1}
+              // INI LOGIKA ZIG-ZAG NYA:
+              // Jika Index Genap (0,2,4) -> "left"
+              // Jika Index Ganjil (1,3,5) -> "right"
+              direction={index % 2 === 0 ? "left" : "right"} 
             >
-              <div className="absolute -right-4 -bottom-8 text-9xl font-extrabold text-gray-50 opacity-50 group-hover:text-sunshine/10 group-hover:scale-110 transition-all duration-500 z-0 pointer-events-none select-none">
-                {item.id}
-              </div>
+              <div
+                className="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl border border-gray-100 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-full"
+              >
+                <div className="absolute -right-4 -bottom-8 text-9xl font-extrabold text-gray-50 opacity-50 group-hover:text-sunshine/10 group-hover:scale-110 transition-all duration-500 z-0 pointer-events-none select-none">
+                  {item.id}
+                </div>
 
-              <div className="relative z-10 w-16 h-16 mb-6 rounded-2xl bg-gradient-to-br from-sunshine/20 to-white flex items-center justify-center  bg-sunshine text-white transition-all duration-300 shadow-sm group-hover:shadow-lg group-hover:shadow-sunshine/30">
-                <svg
-                  className="w-8 h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  {item.icon}
-                </svg>
-              </div>
+                <div className="relative z-10 w-16 h-16 mb-6 rounded-2xl bg-linear-to-br from-sunshine/20 to-white flex items-center justify-center bg-sunshine text-white transition-all duration-300">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {item.icon}
+                  </svg>
+                </div>
 
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sunshine transition-colors">
-                  {item.title}
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700">
-                  {item.desc}
-                </p>
-              </div>
+                <div className="relative z-10">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sunshine transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed group-hover:text-gray-700">
+                    {item.desc}
+                  </p>
+                </div>
 
-              <div className="absolute bottom-0 left-0 w-0 h-1 bg-sunshine group-hover:w-full transition-all duration-500 ease-out"></div>
-            </div>
+                <div className="absolute bottom-0 left-0 w-0 h-1 bg-sunshine group-hover:w-full transition-all duration-500 ease-out"></div>
+              </div>
+            </RevealOnScroll>
           ))}
         </div>
       </div>
