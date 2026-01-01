@@ -64,7 +64,7 @@ const Services = () => {
             </h2>
             <div className="w-24 h-1.5 bg-sunshine mx-auto mt-6 rounded-full"></div>
             <p className="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
-              Kami akan melayani anda dengan beberapa layanan yang unggul dan berkualitas.
+              Kami akan melayani anda dengan beberapa layanan yang <strong className="text-sunshine">unggul</strong> dan <strong className="text-sunshine">berkualitas</strong>.
             </p>
           </div>
         </RevealOnScroll>
@@ -78,14 +78,12 @@ const Services = () => {
               key={index} 
               width="100%" 
               delay={index * 0.1}
-              // INI LOGIKA ZIG-ZAG NYA:
-              // Jika Index Genap (0,2,4) -> "left"
-              // Jika Index Ganjil (1,3,5) -> "right"
               direction={index % 2 === 0 ? "left" : "right"} 
             >
               <div
-                className="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl border border-gray-100 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-full"
+                className="group relative bg-white p-8 rounded-2xl shadow-sm hover:shadow-2xl border border-gray-100 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden h-full flex flex-col items-center text-center"
               >
+                
                 <div className="absolute -right-4 -bottom-8 text-9xl font-extrabold text-gray-50 opacity-50 group-hover:text-sunshine/10 group-hover:scale-110 transition-all duration-500 z-0 pointer-events-none select-none">
                   {item.id}
                 </div>

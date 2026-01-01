@@ -55,7 +55,7 @@ const About = () => {
             <RevealOnScroll width="100%" delay={0.4}>
               <div className="space-y-4 mb-6">
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  Di <strong>Raditya Collection</strong>, kami memahami bahwa lubang
+                  Di <strong className="text-sunshine">Raditya Collection</strong>, kami memahami bahwa lubang
                   kancing yang rapi adalah kunci kualitas sebuah pakaian. Berlokasi
                   di Singaraja, kami mendedikasikan diri sebagai spesialis
                   finishing untuk mendukung penjahit, butik, dan konveksi.

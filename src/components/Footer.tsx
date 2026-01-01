@@ -11,8 +11,7 @@ const Footer = () => {
             Raditya Collection
           </h3>
           <p className="text-gray-300 mb-6 leading-relaxed text-sm">
-            Jasa jahit profesional dengan mengutamakan kualitas, ketepatan
-            waktu, dan kepuasan pelanggan.
+            Jasa lubang kancing dan pasang kancing profesional dengan mengutamakan kualitas, waktu, dan kepuasan pelanggan.
           </p>
           
           {/* --- BAGIAN SOCIAL MEDIA --- */}

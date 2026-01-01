@@ -16,7 +16,7 @@ const Gallery = () => {
     },
     {
       src: "/images/hero.jpg",
-      alt: "Mesin Jahit Profesional",
+      alt: "Mesin Kancing Profesional",
     },
     {
       src: "/images/alatdanbahan.jpg",

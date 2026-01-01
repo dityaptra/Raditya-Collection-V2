@@ -33,7 +33,7 @@ const Location = () => {
                 <div>
                   <h4 className="font-bold text-gray-900">Alamat</h4>
                   <p className="text-gray-600 text-sm mt-1">
-                    Jl. WR Supratman, Penarukan, Kec. Buleleng, Kabupaten Buleleng, Bali 81119
+                    Jl. WR Supratman, Penarukan, Kec. Buleleng, Kabupaten Buleleng, Bali.
                   </p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Location = () => {
                 <div>
                   <h4 className="font-bold text-gray-900">Jam Operasional</h4>
                   <p className="text-gray-600 text-sm mt-1">Setiap Hari: 09.00 - 17.00 WITA</p>
-                  <p className="text-gray-400 text-sm">Tutup dihari Rahinan</p>
+                  <p className="text-gray-600 text-sm">Tutup dihari Rahinan</p>
                 </div>
               </div>
 
