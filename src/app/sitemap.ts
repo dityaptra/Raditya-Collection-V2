@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.radityacollection.web.id';
+  const baseUrl = 'https://radityacollection.web.id';
 
   return [
     {
@@ -10,6 +10,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 1,
     },
-    // Jika nanti ada halaman lain, tinggal tambah di sini
   ];
 }
