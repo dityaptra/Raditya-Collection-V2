@@ -59,7 +59,7 @@ const Hero = () => {
           className="relative w-full h-full"
         >
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero.webp"
             alt="Latar Belakang"
             fill
             className="object-cover"
