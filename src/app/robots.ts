@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',         
       disallow: '/private/', // (Opsional) Blokir folder private jika nanti ada
     },
-    sitemap: 'https://radityacollection.web.id/sitemap.xml',
+    sitemap: 'https://www.radityacollection.web.id/sitemap.xml',
   };
 }

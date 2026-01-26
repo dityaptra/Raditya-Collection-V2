@@ -3,9 +3,9 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Raditya Collection",
-    "image": "https://radityacollection.web.id/images/hero.jpg",
+    "image": "https://www.radityacollection.web.id/images/hero.jpg",
     "telephone": "+6285946182092",
-    "url": "https://radityacollection.web.id",
+    "url": "https://www.radityacollection.web.id",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Singaraja",
@@ -21,7 +21,7 @@ const StructuredData = () => {
       "@type": "WebSite",
       "name": "Raditya Collection",
       "alternateName": "Raditya Collection Singaraja",
-      "url": "https://radityacollection.web.id"
+      "url": "https://www.radityacollection.web.id"
     }
   ];
 

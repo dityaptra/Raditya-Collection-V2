@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://radityacollection.web.id"),
+  metadataBase: new URL("https://www.radityacollection.web.id"),
   title: {
     default: "Raditya Collection: Jasa Lubang & Pasang Kancing di Singaraja",
     template: "%s | Raditya Collection",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Raditya Collection: Spesialis Lubang Kancing dan Pasang Kancing",
     description:
       "Jasa lubang & pasang kancing presisi di Singaraja. Hubungi kami!",
-    url: "https://radityacollection.web.id",
+    url: "https://www.radityacollection.web.id",
     siteName: "Raditya Collection",
     locale: "id_ID",
     type: "website",
