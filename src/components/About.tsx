@@ -17,7 +17,7 @@ const About = () => {
                 {/* Gambar Utama */}
                 <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-4/3 bg-gray-100 border-2 border-white">
                   <Image
-                    src="/images/hero.jpg"
+                    src="/images/hero.webp"
                     alt="Workshop Raditya Collection"
                     fill
                     className="object-cover"
