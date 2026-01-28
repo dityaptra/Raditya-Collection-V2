@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     default: "Raditya Collection: Jasa Lubang & Pasang Kancing di Singaraja",
     template: "%s | Raditya Collection",
   },
+
+  applicationName: "Raditya Collection",
+  
   description:
     "Spesialis jasa lubang kancing dan pasang kancing profesional di Singaraja. Hasil presisi standar garmen, harga bersahabat, kualitas hebat.",
 
