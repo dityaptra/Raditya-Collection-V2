@@ -106,7 +106,7 @@ const Navbar = () => {
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className={`relative group transition-colors duration-300 font-medium cursor-pointer ${
+                  className={`relative group transition-colors duration-300 font-semibold text-base cursor-pointer ${
                     isActive
                       ? "text-sunshine"
                       : "text-gray-700 hover:text-sunshine"
@@ -114,7 +114,7 @@ const Navbar = () => {
                 >
                   {link.name}
                   <span
-                    className={`absolute -bottom-1 left-0 h-0.5 bg-sunshine transition-all duration-300 ease-in-out ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
+                    className={`absolute -bottom-1 left-0 h-[3px] bg-sunshine transition-all duration-300 ease-in-out rounded-full ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
                   ></span>
                 </motion.a>
               );
