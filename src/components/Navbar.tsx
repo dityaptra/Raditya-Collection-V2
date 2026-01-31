@@ -75,7 +75,7 @@ const Navbar = () => {
               onClick={(e) => handleScroll(e, "#home")}
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Logo Raditya Collection"
                 width={150}
                 height={150}
