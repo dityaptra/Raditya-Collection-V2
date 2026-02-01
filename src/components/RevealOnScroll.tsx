@@ -7,7 +7,7 @@ interface Props {
   children: React.ReactNode;
   width?: "fit-content" | "100%";
   delay?: number;
-  direction?: "up" | "left" | "right"; // <--- Opsi Baru Ditambahkan
+  direction?: "up" | "left" | "right";
 }
 
 export const RevealOnScroll = ({ 

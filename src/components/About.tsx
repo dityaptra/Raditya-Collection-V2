@@ -36,14 +36,12 @@ const About = () => {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  
-                  {/* Overlay Gradient on Hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 duration-500"></div>
+
+                  <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent opacity-0 duration-500"></div>
                 </div>
 
-                {/* Badge Tahun Berdiri - Enhanced */}
-                <div className="absolute -bottom-6 right-2 md:-bottom-8 md:-right-8 bg-gradient-to-br from-white to-gray-50 p-5 md:p-6 rounded-2xl shadow-2xl border-t-4 border-sunshine z-20 flex items-center gap-3 md:gap-4 duration-500">
-                  <div className="text-4xl md:text-5xl font-black text-sunshine leading-none animate-pulse">
+                <div className="absolute -bottom-6 right-2 md:-bottom-8 md:-right-8 bg-linear-to-br from-white to-gray-50 p-5 md:p-6 rounded-2xl shadow-2xl border-t-4 border-sunshine z-20 flex items-center gap-3 md:gap-4 duration-500">
+                  <div className="text-4xl md:text-5xl font-black text-sunshine leading-none">
                     {new Date().getFullYear() - 2022}+
                   </div>
                   <div className="text-xs md:text-sm text-gray-800 font-bold leading-tight uppercase tracking-wider">
@@ -58,7 +56,6 @@ const About = () => {
             </RevealOnScroll>
           </div>
 
-          {/* BAGIAN KANAN: KONTEN TEKS */}
           <div className="w-full md:w-1/2">
             
             {/* Tag Label */}
@@ -69,7 +66,6 @@ const About = () => {
               </div>
             </RevealOnScroll>
 
-            {/* 1. Judul (Delay 0.2s) */}
             <RevealOnScroll width="100%" delay={0.2}>
               <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 leading-tight">
                 Detail Kecil, <br />
@@ -82,7 +78,6 @@ const About = () => {
               </h2>
             </RevealOnScroll>
 
-            {/* 2. Paragraf (Delay 0.4s) */}
             <RevealOnScroll width="100%" delay={0.4}>
               <div className="space-y-5 mb-8">
                 <p className="text-gray-700 text-lg leading-relaxed">
@@ -100,7 +95,6 @@ const About = () => {
               </div>
             </RevealOnScroll>
 
-            {/* 3. List Keunggulan (Delay 0.6s) */}
             <RevealOnScroll width="100%" delay={0.6}>
               <div className="space-y-5 bg-gradient-to-br from-sunshine-50/50 to-white p-6 rounded-2xl border-l-4 border-sunshine shadow-lg">
                 {[
